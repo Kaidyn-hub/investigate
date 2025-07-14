@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0e0e0e;
+  color: #ffffff;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background-color: #1a1a1a;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #f39c12;
+}
+
+.story {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+
+.image-box {
+  background-color: #222;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 10px;
+  height: auto;
+  max-height: 330px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.image-box p {
+  font-size: 0.95rem;
+  color: #f1c40f;
+  line-height: 1.4;
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  font-size: 14px;
+  color: #999;
+}
