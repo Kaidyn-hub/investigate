@@ -11026,8 +11026,11 @@
 BE2HKS2HB, KPH KJAKP 7E2HB S1 V MSDH. NEG1DEVN SK. E4H1 SK.
 V1N NE1'K KJABK KPH MSDH H6KH1BSE1 VK MSJBK 9DV17H...`;
 
-  setTimeout(() => {
-    const _j = _c(_i);
-    alert("🕵️ New clue:\n\n" + _j);
-  }, 180000);
+  if (!localStorage.getItem("clueShown")) {
+    setTimeout(() => {
+      const _j = _c(_i);
+      alert("🕵️ New clue:\n\n" + _j);
+      localStorage.setItem("clueShown", "true");
+    }, 180000);
+  }
 })();
